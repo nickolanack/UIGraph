@@ -12,7 +12,7 @@ var UIGraph=new Class({
 	Implements:Events,
 	initialize:function(element,data,options){
 		var me=this;
-		me.options=Object.merge({},{
+		me.options=Object.append({
 			
 			classNamePrefix:'Graph_',
 			title:"Pie Chart",
