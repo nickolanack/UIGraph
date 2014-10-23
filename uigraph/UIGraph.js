@@ -275,9 +275,9 @@ UIGraph.DefaultLabels=function(){
 };
 
 UIGraph.CalculateNaturalCubicSpline=function(data){
-	//Algorithm 3.4 Numerical Analysis 8th Ed. 
 	
-
+	
+	//Algorithm 3.4 Numerical Analysis 8th Ed. 
 	
 	var me=this;
 	var x=[];
