@@ -27,7 +27,7 @@ var UIGraph=new Class({
 				var me=this;
 				return "rgba("+Math.round((256*(me.data.indexOf(data)/me.data.length)))+", 16, 16, 0.4)";
 			}],
-			ParseValue=function(item){
+			ParseValue:function(item){
 				return parseFloat(item);
 			}
 			
@@ -43,7 +43,7 @@ var UIGraph=new Class({
 		me.maxValue=0;
 		if(data&&data.length){
 			Array.each(data,function(v){
-				var d=me.options.ParseValues(v);
+				var d=me.options.ParseValue(v);
 				if(me.maxValue<(d.value||d.y||d))me.maxValue=(d.value||d.y||d);
 				me.data.push(d);
 			});
